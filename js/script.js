@@ -9,3 +9,12 @@ toggleBtn.onclick = function () {
 
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
+
+const acordeon = document.querySelectorAll(".acordeon");
+
+acordeon.forEach((acordeon) => {
+  acordeon.addEventListener("click", () => {
+    const body = acordeon.querySelector(".acordeon-body");
+    body.classList.toggle("active");
+  });
+});

@@ -1,0 +1,110 @@
+#acordeonAba {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.title {
+    font-family: Bebas Neue;font-size: 110px;font-weight: 400;line-height: 110px;text-align: center; color: white;
+}
+
+.title span {
+    color: rgba(175, 6, 0, 1);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 70%;
+
+    background: rgba(16, 15, 15, 1);
+    border-radius: 1em;
+}
+
+.acordeon {
+    background-color: white;
+    border-radius: 1em 1em 0 0;
+    padding: 2em;
+    cursor: pointer;
+    background: rgba(16, 15, 15, 1);
+    border-bottom: 1px solid white;
+}
+
+.acordeon-header {
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Montserrat;font-size: 26px;font-weight: 500;line-height: 31.69px;
+    background: rgba(16, 15, 15, 1);
+}
+
+.fa-chevron-down {
+    color: red;
+}
+
+.acordeon-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: Montserrat;font-size: 1.5em;font-weight: 500;line-height: 31.69px;
+    color: white;
+
+    margin-bottom: .5em;
+}
+
+.acordeon-body {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+
+    font-family: Montserrat;font-size: .9em;font-weight: 500;
+    color: white;
+}
+
+.acordeon-body p {
+    font-size: 1.6rem;
+}
+
+.acordeon-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 1em 0;
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.acordeon:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 414px) {
+    #container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 4em;
+    }
+
+    #acordeonAba {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
