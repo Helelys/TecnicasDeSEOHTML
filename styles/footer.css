@@ -1,0 +1,14 @@
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .7em;
+
+    padding: 1em 0;
+    background: rgba(22, 22, 22, 1);
+}
+
+#footer p {
+    font-family: Roboto;font-size: 16px;font-weight: 400;line-height: 18.75px;text-align: center; color: white;
+}
