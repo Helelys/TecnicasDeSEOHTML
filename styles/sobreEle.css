@@ -1,0 +1,167 @@
+#sobreEle {
+  width: 100%;
+  height: 100%;
+  background-color: #0d0d0d;
+}
+
+.containerSobreEle {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.textosSobreEle {
+  color: white;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40% 10% 10% 10%;
+}
+
+.textosSobreEle h2 {
+  font-family: Bebas Neue;
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 110px;
+  text-align: left;
+}
+
+.textosSobreEle h2 span {
+  color: rgba(175, 6, 0, 1);
+}
+
+.textosSobreEle h3 {
+  font-family: Bebas Neue;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.textosSobreEle p {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  text-align: justify;
+}
+
+.cardSobreEle {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .imgSobreEle {
+    display: none;
+  }
+
+  .textosSobreEle {
+    display: none;
+  }
+
+  .containerSobreEle {
+    padding-inline: 3em;
+  }
+
+  .cardSobreEle {
+    margin-top: 4em;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+  }
+
+  .card_size {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 5% 0;
+    box-sizing: border-box;
+
+    background-color: rgb(14, 14, 14);
+    border-radius: 20px;
+  }
+
+  .card_size img {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .cardSobreEle h2 {
+    font-family: Bebas Neue;
+    font-size: 5.2em;
+    font-weight: 400;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .cardSobreEle h3 {
+    font-family: Bebas Neue;
+    font-size: 5em;
+    font-weight: 400;
+  }
+
+  .cardSobreEle h3 span {
+    color: rgba(175, 6, 0, 1);
+  }
+
+  .card_size p {
+    text-align: justify;
+    width: 80%;
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card_size {
+    width: 80%;
+  }
+
+  .card_size h3 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+
+  .card_size p {
+    height: 500px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card_size {
+    width: 90%;
+  }
+
+  .card_size h3 {
+    font-size: 2.5em;
+  }
+
+  #sobreEle {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card_size {
+    width: 100%;
+  }
+}

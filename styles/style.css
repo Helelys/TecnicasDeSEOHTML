@@ -1,0 +1,22 @@
+/* Montserrat e Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color: #0d0d0d;
+
+}

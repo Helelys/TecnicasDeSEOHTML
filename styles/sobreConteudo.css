@@ -1,0 +1,115 @@
+#sobreConteudo {
+    width: 100%;
+    min-height: 60vh;
+
+    background-color: #0d0d0d;
+}
+
+.textosSobre {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.tituloSobre {
+    width: 300px;
+}
+
+.tituloSobre h2 {
+    font-family: Bebas Neue;font-size: 92px;font-weight: 400;line-height: 92px;text-align: left; color: white;
+}
+
+.tituloSobre h2 span {
+    color: rgba(175, 6, 0, 1);
+}
+
+.textoP {
+    width: 747px;
+    height: auto;
+    color: white;
+}
+
+.textoP p {
+    font-family: Montserrat;font-size: 21px;font-weight: 300;line-height: 31.5px;letter-spacing: -0.04em;text-align: justify;
+}
+
+.video {
+    padding-top: 5em;
+    padding-bottom: 20em;
+    width: 80%;
+    margin: auto;
+}
+
+/* Video */
+
+/* .video {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 40%;
+
+}
+
+.video > iframe {
+    position: absolute;
+    top: 15%;
+    width: 70%;
+    height: 80%;
+} */
+
+@media screen and (max-width: 1024px) {
+    .textosSobre {
+        flex-direction: column;
+    }
+
+    .tituloSobre {
+        width: 100%;
+    }
+
+    .tituloSobre h2 {
+        text-align: center;
+    }
+
+    .textoP {
+        width: 100%;
+        padding-inline: 2em;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .video > iframe {
+    top: 30%;
+    padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .video > iframe {
+    top: 55%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .video > iframe {
+    top: 40em;
+    }
+} */
+
+@media screen and (max-width: 414px) {
+    /* .video > iframe {
+        top: 65em;
+        width: 100%;
+    } */
+
+    #sobre {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
