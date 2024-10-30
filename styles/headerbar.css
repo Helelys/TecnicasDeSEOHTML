@@ -45,6 +45,11 @@ header {
     display: none;
 }
 
+.navbar .links svg, .navbar .links2 svg  {
+    width: 25px;
+    height: 25px;
+}
+
 /* Dropdown menu */
 .dropdown_menu {
     position: absolute;
